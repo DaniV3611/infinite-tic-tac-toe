@@ -39,6 +39,11 @@ export const checkWinner = (cells) => {
     cells[1][1].value === cells[2][2].value
   ) {
     winner = cells[0][0].value;
+  } else if (
+    cells[2][0].value === cells[1][1].value &&
+    cells[1][1].value === cells[0][2].value
+  ) {
+    winner = cells[1][1].value;
   }
   return winner;
 };
