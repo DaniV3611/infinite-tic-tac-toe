@@ -9,7 +9,7 @@ const Board = ({ cells, team, changeTeam, locked }) => {
   let colIndex = 0;
 
   return (
-    <div className="w-72 h-72 my-8 border-4 border-neutral-0 rounded-3xl">
+    <div className="w-48 h-48 lg:w-72 lg:h-72 md:w-72 md:h-72 my-8 border-4 border-neutral-0 rounded-3xl">
       {cells.length > 0 &&
         cells.map((row, row_index) => {
           rowIndex += 1;
