@@ -1,11 +1,15 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import Board from '../components/Board';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<main class="h-dvh flex flex-col items-center justify-center gap-4">
+		<h1 class="text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-md text-center">Infinite Tic Tac Toe</h1>
+		<!-- Board Container -->
+		<Board client:load />
+		<!-- <button class="px-4 py-2 w-32 font-bold text-xl rounded-full bg-black/20 border border-purple-500 hover:bg-purple-500/10 hover:shadow-md hover:shadow-purple-500/30 transition-all cursor-pointer">
+			Reset
+		</button> -->
+	</main>
 </Layout>
