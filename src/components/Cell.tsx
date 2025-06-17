@@ -32,7 +32,7 @@ const Cell = ({
         {value === "X" && (
           <XIcon
             size={48}
-            className="text-green-400 drop-shadow-md drop-shadow-green-400"
+            className="text-emerald-500 drop-shadow-md drop-shadow-emerald-500"
             strokeWidth={3}
             animate={movements === 0}
           />
@@ -40,7 +40,7 @@ const Cell = ({
         {value === "O" && (
           <OIcon
             size={48}
-            className="text-blue-400 drop-shadow-md drop-shadow-blue-400"
+            className="text-cyan-500 drop-shadow-md drop-shadow-cyan-500"
             strokeWidth={3}
             animate={movements === 0}
           />
