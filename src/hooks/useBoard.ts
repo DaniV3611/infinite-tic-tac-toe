@@ -89,7 +89,7 @@ export const useBoard = (): UseBoardReturn => {
         index < 9 &&
         // Si la celda esta vacia o es la sexta jugada (6 movimientos)
         (gameState.board[index].value === null ||
-          gameState.board[index].movements === 6) &&
+          gameState.board[index].movements === 5) &&
         gameState.gameStatus === "playing"
       );
     },
@@ -112,12 +112,12 @@ export const useBoard = (): UseBoardReturn => {
         // Colocar la nueva pieza
         newBoard[index] = {
           value: prevState.currentPlayer,
-          movements: 1,
+          movements: 0,
         };
 
         // Limpiar celdas que llegaron a 6 movimientos
         newBoard.forEach((cell) => {
-          if (cell.movements > 6) {
+          if (cell.movements > 5) {
             cell.value = null;
             cell.movements = 0;
           }

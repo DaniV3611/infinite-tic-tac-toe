@@ -2,15 +2,8 @@ import { useBoard } from "../hooks/useBoard";
 import Cell from "./Cell";
 
 const Board = () => {
-  const {
-    board,
-    currentPlayer,
-    gameStatus,
-    winner,
-    makeMove,
-    resetGame,
-    isValidMove,
-  } = useBoard();
+  const { board, currentPlayer, winner, makeMove, resetGame, isValidMove } =
+    useBoard();
 
   return (
     <div className="flex items-center justify-center">

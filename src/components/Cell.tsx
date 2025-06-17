@@ -48,7 +48,7 @@ const Cell = ({
       </div>
 
       {/* Efecto de pulsación para celdas que están por desaparecer */}
-      {!winner && value && movements >= 6 && (
+      {!winner && value && movements >= 5 && (
         <div className="absolute inset-0 bg-red-500/30 animate-pulse rounded-xl" />
       )}
 
